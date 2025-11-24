@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TUẤN VOI(CE) | Thanh âm từ tâm</title>
+    <meta
+      name="description"
+      content="Giọng đọc chuyên nghiệp, MC Truyền hình, thu âm quảng cáo, phim tài liệu, e-learning."
+    />
+    <link rel="icon" href="assets/logo.ico" type="image/x-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Sticky Header -->
+    <header class="header">
+      <div class="container header-container">
+        <a href="#" class="logo">
+          <img src="assets/logo.svg" alt="Tuấn Voi(ce)" />
+          <span class="logo-text">Tuấn Voi</span>
+        </a>
+        <nav class="nav-desktop">
+          <a href="#about">Giới thiệu</a>
+          <a href="#demos">Giọng mẫu</a>
+          <a href="#videos">Video TVC</a>
+          <a href="#services">Dịch vụ</a>
+          <a href="#contact">Liên hệ</a>
+          <a href="#contact" class="btn btn-primary">Đặt lịch ngay</a>
+        </nav>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+      <button class="close-menu-btn" aria-label="Close menu">
+        <i class="fas fa-times"></i>
+      </button>
+      <nav class="nav-mobile">
+        <a href="#about">Giới thiệu</a>
+        <a href="#demos">Giọng mẫu</a>
+        <a href="#videos">Video TVC</a>
+        <a href="#services">Dịch vụ</a>
+        <a href="#contact">Liên hệ</a>
+      </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <h1>TUẤN VOI(CE)</h1>
+          <h2 style="font-size: 2rem; margin-bottom: 20px; color: #eab308">
+            Thanh âm từ tâm
+          </h2>
+          <p class="sub-tagline">
+            Voice Talent Chuyên Nghiệp • MC Truyền hình • Thu âm Quảng cáo
+          </p>
+          <a href="#demos" class="btn btn-primary"
+            >Nghe Demo <i class="fas fa-arrow-down"></i
+          ></a>
+        </div>
+        <div class="hero-image-wrapper">
+          <div class="glow-effect"></div>
+          <img
+            src="assets/hero.png"
+            alt="Tuan Voice Talent"
+            class="hero-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+      <div class="container about-container">
+        <div class="about-text">
+          <h2 class="section-title">Giới thiệu</h2>
+          <p>
+            Xin chào! Tôi là Tuấn, một Voice Talent và MC Truyền hình chuyên
+            nghiệp với niềm đam mê mang đến "Thanh âm từ tâm" cho mọi dự án. Với
+            chất giọng ấm áp, đáng tin cậy và linh hoạt, tôi tự tin có thể
+            truyền tải thông điệp của bạn một cách trọn vẹn nhất đến khán giả.
+          </p>
+          <p>
+            Dù bạn cần một giọng đọc uy lực cho phim tài liệu doanh nghiệp, một
+            tông giọng thân thiện cho quảng cáo, hay phong thái chuyên nghiệp
+            của một MC truyền hình, tôi cam kết mang lại sản phẩm chất lượng cao
+            với thời gian nhanh chóng.
+          </p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i class="fas fa-microphone-alt"></i>
+            <h3>Studio Chuyên Nghiệp</h3>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-tv"></i>
+            <h3>MC Truyền hình</h3>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-bolt"></i>
+            <h3>Giao File Nhanh</h3>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-sliders-h"></i>
+            <h3>Hậu Kỳ Chuẩn</h3>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-headset"></i>
+            <h3>Thu Âm Online</h3>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-file-audio"></i>
+            <h3>Chất Lượng Cao</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="partners">
+      <div class="container">
+        <h2 class="section-title text-center">Các đối tác đã hợp tác</h2>
+        <div class="partners-carousel">
+          <div class="partners-swiper swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide partner-slide">
+                <img
+                  src="assets/partner/viettel.jpg"
+                  alt="Đối tác Viettel"
+                  class="partner-logo-img"
+                />
+              </div>
+              <div class="swiper-slide partner-slide">
+                <img
+                  src="assets/partner/mobifone.jpg"
+                  alt="Đối tác MobiFone"
+                  class="partner-logo-img"
+                />
+              </div>
+              <div class="swiper-slide partner-slide">
+                <img
+                  src="assets/partner/bidv.jpg"
+                  alt="Đối tác BIDV"
+                  class="partner-logo-img"
+                />
+              </div>
+              <div class="swiper-slide partner-slide">
+                <img
+                  src="assets/partner/vinaphone.png"
+                  alt="Đối tác Vinaphone"
+                  class="partner-logo-img"
+                />
+              </div>
+              <div class="swiper-slide partner-slide">
+                <img
+                  src="assets/partner/vietnam-airlines.jpg"
+                  alt="Đối tác Vietnam Airlines"
+                  class="partner-logo-img"
+                />
+              </div>
+              <div class="swiper-slide partner-slide">
+                <img
+                  src="assets/partner/xanh-sm.png"
+                  alt="Đối tác Xanh SM"
+                  class="partner-logo-img"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="partners-controls">
+            <button
+              class="partner-control swiper-button-prev"
+              aria-label="Đối tác trước"
+            >
+              <i class="fas fa-arrow-left"></i>
+            </button>
+            <button
+              class="partner-control swiper-button-next"
+              aria-label="Đối tác tiếp theo"
+            >
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Audio Demos Section -->
+    <section id="demos" class="demos">
+      <div class="container">
+        <h2 class="section-title text-center">Giọng mẫu nổi bật</h2>
+        <div class="demos-grid">
+          <!-- Demo Card 1 -->
+          <div class="audio-card">
+            <button class="play-btn" aria-label="Phát Quảng Cáo (TVC)">
+              <i class="fas fa-play"></i>
+            </button>
+            <audio class="demo-audio" preload="metadata">
+              <source src="assets/audio/40s.mp3" type="audio/mpeg" />
+            </audio>
+            <div class="audio-info">
+              <h3>Quảng Cáo (TVC)</h3>
+              <div class="waveform" data-clickable="true"></div>
+            </div>
+            <span class="duration">0:40</span>
+          </div>
+          <!-- Demo Card 2 -->
+          <div class="audio-card">
+            <button class="play-btn" aria-label="Phát Lời Bình">
+              <i class="fas fa-play"></i>
+            </button>
+            <audio class="demo-audio" preload="metadata">
+              <source src="assets/audio/67s.mp3" type="audio/mpeg" />
+            </audio>
+            <div class="audio-info">
+              <h3>Lời Bình (Narration)</h3>
+              <div class="waveform" data-clickable="true"></div>
+            </div>
+            <span class="duration">1:07</span>
+          </div>
+          <!-- Demo Card 3 -->
+          <div class="audio-card">
+            <button class="play-btn" aria-label="Phát E-learning">
+              <i class="fas fa-play"></i>
+            </button>
+            <audio class="demo-audio" preload="metadata">
+              <source src="assets/audio/156.mp3" type="audio/mpeg" />
+            </audio>
+            <div class="audio-info">
+              <h3>E-learning</h3>
+              <div class="waveform" data-clickable="true"></div>
+            </div>
+            <span class="duration">2:36</span>
+          </div>
+          <!-- Demo Card 4 -->
+          <div class="audio-card">
+            <button class="play-btn" aria-label="Phát Phim Tài Liệu">
+              <i class="fas fa-play"></i>
+            </button>
+            <audio class="demo-audio" preload="metadata">
+              <source src="assets/audio/12.mp3" type="audio/mpeg" />
+            </audio>
+            <div class="audio-info">
+              <h3>Phim Tài Liệu</h3>
+              <div class="waveform" data-clickable="true"></div>
+            </div>
+            <span class="duration">0:12</span>
+          </div>
+          <!-- Demo Card 5 -->
+          <div class="audio-card">
+            <button class="play-btn" aria-label="Phát Lồng tiếng nhân vật">
+              <i class="fas fa-play"></i>
+            </button>
+            <audio class="demo-audio" preload="metadata">
+              <source src="assets/audio/11s.mp3" type="audio/mpeg" />
+            </audio>
+            <div class="audio-info">
+              <h3>Lồng Tiếng Nhân Vật</h3>
+              <div class="waveform" data-clickable="true"></div>
+            </div>
+            <span class="duration">0:11</span>
+          </div>
+          <!-- Demo Card 6 -->
+          <div class="audio-card">
+            <button class="play-btn" aria-label="Phát Tổng đài IVR">
+              <i class="fas fa-play"></i>
+            </button>
+            <audio class="demo-audio" preload="metadata">
+              <source src="assets/audio/4s.mp3" type="audio/mpeg" />
+            </audio>
+            <div class="audio-info">
+              <h3>Tổng đài (IVR)</h3>
+              <div class="waveform" data-clickable="true"></div>
+            </div>
+            <span class="duration">0:04</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video TVC Section -->
+    <section id="videos" class="videos">
+      <div class="container">
+        <h2 class="section-title text-center">Video TVC đã thực hiện</h2>
+        <div class="video-grid">
+          <!-- Video Card 1 -->
+          <div class="video-card video-playing">
+            <div class="video-embed">
+              <iframe
+                src="https://www.youtube.com/embed/sQzZRt-kySo?si=55YzTbhLE-qhJhFj"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3>TVC Quảng Cáo Bất Động Sản</h3>
+              <p>Voice Talent: Tuấn Voi(ce)</p>
+            </div>
+          </div>
+          <!-- Video Card 2 -->
+          <div class="video-card" data-video-id="213E53SyLlM">
+            <div class="video-embed">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/sSLFn2oHCk0?si=RYBjzi2XXZuaZWqU&amp;controls=0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-info">
+              <h3>Phim Giới Thiệu Doanh Nghiệp</h3>
+              <p>Voice Talent: Tuấn Voi(ce)</p>
+            </div>
+          </div>
+          <!-- Video Card 3 -->
+          <div class="video-card" data-video-id="GmzYI5toDy8">
+            <div
+              class="video-thumbnail"
+              style="
+                background-image: url('https://img.youtube.com/vi/GmzYI5toDy8/hqdefault.jpg');
+              "
+            >
+              <button
+                class="video-play-btn"
+                aria-label="Phát TVC Khuyến Mãi Tết"
+              >
+                <i class="fas fa-play"></i>
+              </button>
+            </div>
+            <div class="video-info">
+              <h3>TVC Khuyến Mãi Tết</h3>
+              <p>Voice Talent: Tuấn Voi(ce)</p>
+            </div>
+          </div>
+          <!-- Video Card 4 -->
+          <div class="video-card" data-video-id="32zSa0X0yAs">
+            <div
+              class="video-thumbnail"
+              style="
+                background-image: url('https://img.youtube.com/vi/32zSa0X0yAs/hqdefault.jpg');
+              "
+            >
+              <button
+                class="video-play-btn"
+                aria-label="Phát Video E-learning Nội Bộ"
+              >
+                <i class="fas fa-play"></i>
+              </button>
+            </div>
+            <div class="video-info">
+              <h3>Video E-learning Nội Bộ</h3>
+              <p>Voice Talent: Tuấn Voi(ce)</p>
+            </div>
+          </div>
+          <!-- Video Card 5 -->
+          <div class="video-card" data-video-id="sSLFn2oHCk0">
+            <div
+              class="video-thumbnail"
+              style="
+                background-image: url('https://img.youtube.com/vi/sSLFn2oHCk0/hqdefault.jpg');
+              "
+            >
+              <button
+                class="video-play-btn"
+                aria-label="Phát TV Show Highlight"
+              >
+                <i class="fas fa-play"></i>
+              </button>
+            </div>
+            <div class="video-info">
+              <h3>TV Show Highlight</h3>
+              <p>Voice Talent: Tuấn Voi(ce)</p>
+            </div>
+          </div>
+          <!-- Video Card 6 -->
+          <div class="video-card" data-video-id="60ljmoLH09I">
+            <div
+              class="video-thumbnail"
+              style="
+                background-image: url('https://img.youtube.com/vi/60ljmoLH09I/hqdefault.jpg');
+              "
+            >
+              <button class="video-play-btn" aria-label="Phát Case Study TVC">
+                <i class="fas fa-play"></i>
+              </button>
+            </div>
+            <div class="video-info">
+              <h3>Case Study TVC</h3>
+              <p>Voice Talent: Tuấn Voi(ce)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services & Pricing Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <h2 class="section-title text-center">Dịch vụ & Bảng giá</h2>
+        <div class="pricing-grid">
+          <!-- Basic Plan -->
+          <div class="pricing-card">
+            <h3>Kịch bản ngắn</h3>
+            <p class="price">Từ 500k</p>
+            <ul class="features-list">
+              <li><i class="fas fa-check"></i> Dưới 150 từ</li>
+              <li><i class="fas fa-check"></i> Giao trong 24h</li>
+              <li><i class="fas fa-check"></i> 1 Lần chỉnh sửa</li>
+              <li><i class="fas fa-check"></i> File WAV/MP3 chuẩn</li>
+            </ul>
+            <a href="#contact" class="btn btn-secondary">Chọn Gói</a>
+          </div>
+          <!-- Popular Plan -->
+          <div class="pricing-card popular">
+            <div class="popular-badge">Phổ Biến Nhất</div>
+            <h3>Dự Án Tiêu Chuẩn</h3>
+            <p class="price">Từ 1tr</p>
+            <ul class="features-list">
+              <li><i class="fas fa-check"></i> Dưới 500 từ</li>
+              <li><i class="fas fa-check"></i> Giao trong 24h</li>
+              <li><i class="fas fa-check"></i> 2 Lần chỉnh sửa</li>
+              <li><i class="fas fa-check"></i> File WAV/MP3 chuẩn</li>
+              <li><i class="fas fa-check"></i> Bản quyền thương mại</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">Chọn Gói</a>
+          </div>
+          <!-- Pro Plan -->
+          <div class="pricing-card">
+            <h3>Dài Tập / Dẫn MC</h3>
+            <p class="price">Liên hệ</p>
+            <ul class="features-list">
+              <li><i class="fas fa-check"></i> Dẫn chương trình / MC</li>
+              <li><i class="fas fa-check"></i> Phim tài liệu dài</li>
+              <li><i class="fas fa-check"></i> Hỗ trợ trọn gói</li>
+              <li><i class="fas fa-check"></i> File WAV/MP3 chuẩn</li>
+              <li><i class="fas fa-check"></i> Bản quyền phát sóng</li>
+            </ul>
+            <a href="#contact" class="btn btn-secondary">Liên hệ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container contact-container">
+        <div class="contact-info">
+          <h2 class="section-title text-white">Hợp tác cùng tôi</h2>
+          <p class="text-gray">
+            Bạn đã sẵn sàng để dự án của mình cất tiếng nói? Hãy điền vào form
+            hoặc liên hệ trực tiếp với tôi.
+          </p>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>mctuanngoc.event88@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <span>0332.368.132</span>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-facebook"></i>
+            <span>facebook.com/tuanvoice</span>
+          </div>
+          <div class="contact-actions">
+            <a
+              href="https://zalo.me/0332368132"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-primary"
+            >
+              <i class="fas fa-comments"></i>
+              Trao đổi nhanh qua Zalo
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-wrapper">
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Họ Tên</label>
+              <input type="text" id="name" placeholder="Tên của bạn" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="email@cuaban.com" />
+            </div>
+            <div class="form-group">
+              <label for="message">Chi tiết dự án</label>
+              <textarea
+                id="message"
+                rows="4"
+                placeholder="Hãy mô tả về dự án của bạn..."
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">
+              Gửi Tin Nhắn
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
