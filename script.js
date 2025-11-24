@@ -180,33 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // ========================================
-  // 3. Smooth Scrolling & Navigation
-  // ========================================
-  function initSmoothScroll() {
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute("href");
-        if (targetId === "#") return;
-
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-          const headerOffset = 80;
-          const elementPosition = targetElement.getBoundingClientRect().top;
-          const offsetPosition =
-            elementPosition + window.pageYOffset - headerOffset;
-
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: "smooth",
-          });
-        }
-      });
-    });
-  }
-
-  // ========================================
-  // 4. Active Navigation Highlighting
+  // 3. Active Navigation Highlighting
   // ========================================
   function initActiveNav() {
     const navLinks = document.querySelectorAll(
@@ -275,7 +249,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // ========================================
-  // 5. Partners Swiper Carousel
+  // 4. Partners Swiper Carousel
   // ========================================
   function initPartnersSwiper() {
     const partnerSwiperEl = document.querySelector(".partners-swiper");
@@ -304,7 +278,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // ========================================
-  // 6. Video Embed on Click
+  // 5. Video Embed on Click
   // ========================================
   function initVideoCards() {
     const videoCards = document.querySelectorAll(".video-card[data-video-id]");
@@ -348,7 +322,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // ========================================
-  // 7. FAQ Accordion
+  // 6. FAQ Accordion
   // ========================================
   function initFAQ() {
     const faqItems = document.querySelectorAll(".faq-item");
@@ -389,8 +363,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // ========================================
   initMobileMenu();
   initAudioPlayer();
-  initSmoothScroll();
-  initActiveNav();
+  // initActiveNav();
   initPartnersSwiper();
   initVideoCards();
   initFAQ();

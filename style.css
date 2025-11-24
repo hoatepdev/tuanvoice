@@ -18,6 +18,14 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 80px;
+}
+
 body {
   font-family: var(--font-body);
   color: var(--primary-navy);
@@ -949,7 +957,7 @@ img {
 
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin-top: 60px;
 }
