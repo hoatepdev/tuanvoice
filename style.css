@@ -6,9 +6,9 @@
   --text-white: #ffffff;
   --shadow-soft: 0 10px 25px -5px rgba(15, 23, 42, 0.05);
   --radius-lg: 20px;
-  --spacing-section: 100px;
-  --font-heading: "Merriweather", sans-serif;
-  --font-body: "Inter", sans-serif;
+  --spacing-section: 80px;
+  --font-heading: "Merriweather", serif;
+  --font-body: "Be Vietnam Pro", sans-serif;
 }
 
 /* Reset & Global */
@@ -175,7 +175,7 @@ img {
 .hero {
   background-color: var(--primary-navy);
   color: var(--text-white);
-  padding: 80px 0;
+  padding: var(--spacing-section) 0;
   min-height: 80vh;
   display: flex;
   align-items: center;
@@ -230,6 +230,7 @@ img {
   position: relative;
   z-index: 2;
   height: 100%;
+  margin: 0 auto;
 }
 
 .glow-effect {
@@ -249,7 +250,7 @@ img {
 
 /* Intro Section */
 .intro-section {
-  padding: 80px 0;
+  padding: var(--spacing-section) 0;
   background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
   border-bottom: 1px solid var(--border-gray);
 }
@@ -767,7 +768,6 @@ img {
 .nav-mobile a {
   color: white;
   font-size: 2rem;
-  font-family: var(--font-heading);
   font-weight: 600;
 }
 
