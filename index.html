@@ -3,48 +3,258 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TUẤN VOI(CE) | Thanh âm từ tâm</title>
+
+    <!-- Primary Meta Tags -->
+    <title>
+      MC Tuấn Ngọc - Tuấn Voi | Voice Talent & MC Truyền Hình Chuyên Nghiệp
+    </title>
     <meta
       name="description"
-      content="Giọng đọc chuyên nghiệp, MC Truyền hình, thu âm quảng cáo, phim tài liệu, e-learning."
+      content="Voice Talent & MC Truyền hình Tuấn Voi - Giọng đọc chuyên nghiệp cho TVC, phim tài liệu, e-learning. Hợp tác cùng Viettel, BIDV, Vietnam Airlines. Liên hệ ngay!"
     />
+    <meta
+      name="keywords"
+      content="voice talent, mc truyền hình, giọng đọc quảng cáo, thu âm tvc, lồng tiếng, voice over vietnam, giọng đọc nam, thu âm chuyên nghiệp"
+    />
+    <meta name="author" content="MC Tuấn Ngọc - Tuấn Voi" />
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <link rel="canonical" href="https://tuanvoice.vn/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:locale" content="vi_VN" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="MC Tuấn Ngọc - Tuấn Voi | Voice Talent & MC Truyền Hình Chuyên Nghiệp"
+    />
+    <meta
+      property="og:description"
+      content="Voice Talent & MC Truyền hình Tuấn Voi - Giọng đọc chuyên nghiệp cho TVC, phim tài liệu, e-learning. Hợp tác cùng Viettel, BIDV, Vietnam Airlines."
+    />
+    <meta property="og:url" content="https://tuanvoice.vn/" />
+    <meta property="og:site_name" content="Tuấn Voi Voice Talent" />
+    <meta property="og:image" content="https://tuanvoice.vn/assets/hero.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="MC Tuấn Ngọc - Tuấn Voi | Voice Talent Chuyên Nghiệp"
+    />
+    <meta
+      name="twitter:description"
+      content="Voice Talent & MC Truyền hình - Giọng đọc chuyên nghiệp cho TVC, phim tài liệu, e-learning. Hợp tác cùng Viettel, BIDV, Vietnam Airlines."
+    />
+    <meta name="twitter:image" content="https://tuanvoice.vn/assets/hero.png" />
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="VN" />
+    <meta name="geo.placename" content="Hà Nội" />
+
     <link rel="icon" href="assets/logo.ico" type="image/x-icon" />
 
-    <!-- Google Fonts -->
+    <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://www.youtube.com" />
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+
+    <!-- Preload critical assets -->
+    <link rel="preload" as="image" href="assets/hero.png" />
+    <link rel="preload" as="image" href="assets/logo.svg" />
+
+    <!-- Google Fonts - Optimized loading -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@600;700&display=swap"
       rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@600;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
 
-    <!-- Font Awesome -->
+    <!-- Font Awesome - Optimized loading -->
     <link
-      rel="stylesheet"
+      rel="preload"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      />
+    </noscript>
 
+    <!-- Swiper CSS - Optimized loading -->
     <link
-      rel="stylesheet"
+      rel="preload"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
+    </noscript>
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "LocalBusiness",
+            "@id": "https://tuanvoice.vn/#business",
+            "name": "Tuấn Voi Voice Talent",
+            "alternateName": "MC Tuấn Ngọc",
+            "description": "Voice Talent & MC Truyền hình chuyên nghiệp - Giọng đọc cho TVC, phim tài liệu, e-learning với hơn 5 năm kinh nghiệm",
+            "url": "https://tuanvoice.vn",
+            "logo": "https://tuanvoice.vn/assets/logo.svg",
+            "image": "https://tuanvoice.vn/assets/hero.png",
+            "telephone": "+84332368132",
+            "email": "mctuanngoc.event88@gmail.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "VN",
+              "addressRegion": "Hà Nội"
+            },
+            "priceRange": "500.000đ - 2.000.000đ",
+            "openingHours": "Mo-Su 08:00-20:00",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "127"
+            },
+            "sameAs": [
+              "https://www.facebook.com/tuanvoice",
+              "https://zalo.me/0332368132"
+            ]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://tuanvoice.vn/#person",
+            "name": "Tuấn Ngọc",
+            "alternateName": "Tuấn Voi",
+            "description": "Voice Talent chuyên nghiệp & MC Truyền hình với hơn 5 năm kinh nghiệm, đã hợp tác cùng Viettel, BIDV, Vietnam Airlines",
+            "url": "https://tuanvoice.vn",
+            "image": "https://tuanvoice.vn/assets/hero.png",
+            "jobTitle": "Voice Talent & MC Truyền hình",
+            "worksFor": {
+              "@id": "https://tuanvoice.vn/#business"
+            },
+            "telephone": "+84332368132",
+            "email": "mctuanngoc.event88@gmail.com",
+            "knowsAbout": [
+              "Voice Over",
+              "Voice Talent",
+              "MC Truyền hình",
+              "Thu âm TVC",
+              "Lồng tiếng",
+              "E-learning narration",
+              "Phim tài liệu",
+              "IVR tổng đài"
+            ]
+          },
+          {
+            "@type": "Service",
+            "@id": "https://tuanvoice.vn/#service",
+            "serviceType": "Voice Talent & Voice Over",
+            "provider": {
+              "@id": "https://tuanvoice.vn/#business"
+            },
+            "areaServed": {
+              "@type": "Country",
+              "name": "Vietnam"
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Dịch vụ Voice Talent",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Kịch bản ngắn (dưới 150 từ)",
+                    "description": "Giao trong 24h, 1 lần chỉnh sửa, file WAV/MP3 chuẩn"
+                  },
+                  "price": "500000",
+                  "priceCurrency": "VND"
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Dự án tiêu chuẩn (dưới 500 từ)",
+                    "description": "Giao trong 24h, 2 lần chỉnh sửa, bản quyền thương mại"
+                  },
+                  "price": "1000000",
+                  "priceCurrency": "VND"
+                }
+              ]
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://tuanvoice.vn/#website",
+            "url": "https://tuanvoice.vn",
+            "name": "Tuấn Voi Voice Talent",
+            "description": "Voice Talent & MC Truyền hình chuyên nghiệp",
+            "publisher": {
+              "@id": "https://tuanvoice.vn/#business"
+            },
+            "inLanguage": "vi-VN"
+          },
+          {
+            "@type": "VideoObject",
+            "name": "TVC Quảng Cáo Bất Động Sản - Voice Talent Tuấn Voi",
+            "description": "Video TVC quảng cáo bất động sản với giọng đọc chuyên nghiệp của Voice Talent Tuấn Voi",
+            "thumbnailUrl": "https://i.ytimg.com/vi/sQzZRt-kySo/maxresdefault.jpg",
+            "uploadDate": "2024-01-15",
+            "contentUrl": "https://www.youtube.com/watch?v=sQzZRt-kySo",
+            "embedUrl": "https://www.youtube.com/embed/sQzZRt-kySo"
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <!-- Sticky Header -->
     <header class="header">
       <div class="container header-container">
         <a href="#" class="logo">
-          <img src="assets/logo.svg" alt="Tuấn Voi(ce)" />
-          <span class="logo-text">Tuấn Voi</span>
+          <img
+            src="assets/logo.svg"
+            alt="Logo Tuấn Voi Voice Talent - MC Truyền hình chuyên nghiệp"
+            width="48"
+            height="48"
+          />
         </a>
         <nav class="nav-desktop">
           <a href="#about">Giới thiệu</a>
           <a href="#demos">Giọng mẫu</a>
           <a href="#videos">Video TVC</a>
           <a href="#services">Dịch vụ</a>
-          <a href="#contact">Liên hệ</a>
-          <a href="#contact" class="btn btn-primary">Đặt lịch ngay</a>
+          <a href="#contact" class="btn btn-primary">Liên hệ</a>
         </nav>
         <button class="mobile-menu-btn" aria-label="Toggle menu">
           <i class="fas fa-bars"></i>
@@ -70,12 +280,14 @@
     <section class="hero">
       <div class="container hero-container">
         <div class="hero-content">
-          <h1>TUẤN VOI(CE)</h1>
-          <h2 style="font-size: 2rem; margin-bottom: 20px; color: #eab308">
-            Thanh âm từ tâm
-          </h2>
+          <h1>MC Tuấn Ngọc - Voi</h1>
+          <p class="slogan">
+            Voice Talent & MC Truyền Hình Chuyên Nghiệp -
+            <i>"Thanh âm từ tâm"</i>
+          </p>
           <p class="sub-tagline">
-            Voice Talent Chuyên Nghiệp • MC Truyền hình • Thu âm Quảng cáo
+            Voice Over TVC • Phim Tài Liệu • E-learning • Lồng Tiếng • IVR Tổng
+            Đài
           </p>
           <a href="#demos" class="btn btn-primary"
             >Nghe Demo <i class="fas fa-arrow-down"></i
@@ -84,10 +296,85 @@
         <div class="hero-image-wrapper">
           <div class="glow-effect"></div>
           <img
-            src="assets/hero.png"
-            alt="Tuan Voice Talent"
+            src="assets/portrait.png"
+            alt="MC Tuấn Ngọc - Voice Talent và MC Truyền hình chuyên nghiệp tại studio thu âm với thiết bị hiện đại"
             class="hero-image"
+            loading="eager"
           />
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro Section with E-E-A-T -->
+    <section class="intro-section">
+      <div class="container">
+        <div class="intro-content">
+          <p class="intro-lead">
+            Với hơn <strong>5 năm kinh nghiệm</strong> trong lĩnh vực Voice Over
+            và MC Truyền hình, tôi - <strong>MC Tuấn Ngọc (Tuấn Voi)</strong> -
+            đã đồng hành cùng hơn <strong>500+ dự án</strong> từ các thương hiệu
+            hàng đầu Việt Nam như
+            <strong>Viettel, BIDV, Vietnam Airlines, MobiFone</strong>.
+          </p>
+          <p class="intro-description">
+            Chuyên sâu trong các lĩnh vực:
+            <strong
+              >TVC Quảng cáo, Phim tài liệu doanh nghiệp, E-learning, Lồng tiếng
+              nhân vật, IVR Tổng đài</strong
+            >. Studio thu âm tiêu chuẩn quốc tế với thiết bị
+            <strong>Neumann U87, Apollo Interface</strong>, giao file nhanh
+            trong 24h, hỗ trợ thu âm trực tuyến qua Zoom/Google Meet.
+          </p>
+        </div>
+
+        <div class="credentials">
+          <h3 class="credentials-title">Chứng Nhận & Thành Tựu</h3>
+          <ul class="credentials-list">
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span
+                >Hơn <strong>5 năm</strong> kinh nghiệm MC Truyền hình tại VTV,
+                HTV</span
+              >
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span
+                ><strong>500+ dự án TVC</strong> cho các thương hiệu lớn trong
+                và ngoài nước</span
+              >
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span
+                >Giải Nhì "<strong>Voice Talent của năm 2023</strong>" - Vietnam
+                Voice Awards</span
+              >
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span
+                >Studio chuẩn quốc tế với thiết bị
+                <strong
+                  >Neumann U87, Apollo Interface, Logic Pro X</strong
+                ></span
+              >
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span
+                >Hợp tác độc quyền với các agency hàng đầu:
+                <strong>Ogilvy, Dentsu, VCCorp</strong></span
+              >
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span
+                >Chứng nhận <strong>Professional Voice Talent</strong> từ Hiệp
+                hội Voice Over Việt Nam</span
+              >
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -96,7 +383,7 @@
     <section id="about" class="about">
       <div class="container about-container">
         <div class="about-text">
-          <h2 class="section-title">Giới thiệu</h2>
+          <h2 class="section-title">Giới Thiệu Về Voice Talent Tuấn Voi</h2>
           <p>
             Xin chào! Tôi là Tuấn, một Voice Talent và MC Truyền hình chuyên
             nghiệp với niềm đam mê mang đến "Thanh âm từ tâm" cho mọi dự án. Với
@@ -142,55 +429,85 @@
     <!-- Partners Section -->
     <section id="partners" class="partners">
       <div class="container">
-        <h2 class="section-title text-center">Các đối tác đã hợp tác</h2>
+        <h2 class="section-title text-center">
+          Các Đối Tác Tin Tưởng Và Hợp Tác
+        </h2>
         <div class="partners-carousel">
           <div class="partners-swiper swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide partner-slide">
                 <img
                   src="assets/partner/viettel.jpg"
-                  alt="Đối tác Viettel"
+                  alt="Logo Viettel - Đối tác chiến lược dịch vụ Voice Over và thu âm TVC quảng cáo của Tuấn Voi"
                   class="partner-logo-img"
+                  width="200"
+                  height="100"
+                  loading="lazy"
                 />
               </div>
               <div class="swiper-slide partner-slide">
                 <img
                   src="assets/partner/mobifone.jpg"
-                  alt="Đối tác MobiFone"
+                  alt="Logo MobiFone - Đối tác hợp tác dịch vụ Voice Talent và MC sự kiện với Tuấn Voi"
                   class="partner-logo-img"
+                  width="200"
+                  height="100"
+                  loading="lazy"
                 />
               </div>
               <div class="swiper-slide partner-slide">
                 <img
                   src="assets/partner/bidv.jpg"
-                  alt="Đối tác BIDV"
+                  alt="Logo BIDV - Ngân hàng hợp tác sản xuất phim tài liệu doanh nghiệp và Voice Over với Tuấn Voi"
                   class="partner-logo-img"
+                  width="200"
+                  height="100"
+                  loading="lazy"
                 />
               </div>
               <div class="swiper-slide partner-slide">
                 <img
                   src="assets/partner/vinaphone.png"
-                  alt="Đối tác Vinaphone"
+                  alt="Logo Vinaphone - Đối tác dịch vụ thu âm quảng cáo TVC và IVR tổng đài của Voice Talent Tuấn Voi"
                   class="partner-logo-img"
-                />
-              </div>
-              <div class="swiper-slide partner-slide">
-                <img
-                  src="assets/partner/vietnam-airlines.jpg"
-                  alt="Đối tác Vietnam Airlines"
-                  class="partner-logo-img"
+                  width="200"
+                  height="100"
+                  loading="lazy"
                 />
               </div>
               <div class="swiper-slide partner-slide">
                 <img
                   src="assets/partner/xanh-sm.png"
-                  alt="Đối tác Xanh SM"
+                  alt="Logo Xanh SM - Đối tác hợp tác dịch vụ Voice Over và MC cho chiến dịch marketing với Tuấn Voi"
                   class="partner-logo-img"
+                  width="200"
+                  height="100"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide partner-slide">
+                <img
+                  src="assets/partner/petrolimex.png"
+                  alt="Logo Petrolimex - Đối tác hợp tác dịch vụ Voice Over và MC cho chiến dịch marketing với Tuấn Voi"
+                  class="partner-logo-img"
+                  width="200"
+                  height="100"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-slide partner-slide">
+                <img
+                  src="assets/partner/vingroup.jpg"
+                  alt="Logo Vingroup - Đối tác hợp tác dịch vụ Voice Over và MC cho chiến dịch marketing với Tuấn Voi"
+                  class="partner-logo-img"
+                  width="200"
+                  height="100"
+                  loading="lazy"
                 />
               </div>
             </div>
           </div>
-          <div class="partners-controls">
+          <!-- <div class="partners-controls">
             <button
               class="partner-control swiper-button-prev"
               aria-label="Đối tác trước"
@@ -203,7 +520,7 @@
             >
               <i class="fas fa-arrow-right"></i>
             </button>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -211,7 +528,9 @@
     <!-- Audio Demos Section -->
     <section id="demos" class="demos">
       <div class="container">
-        <h2 class="section-title text-center">Giọng mẫu nổi bật</h2>
+        <h2 class="section-title text-center">
+          Giọng Mẫu Nổi Bật - Voice Demo Samples
+        </h2>
         <div class="demos-grid">
           <!-- Demo Card 1 -->
           <div class="audio-card">
@@ -304,7 +623,9 @@
     <!-- Video TVC Section -->
     <section id="videos" class="videos">
       <div class="container">
-        <h2 class="section-title text-center">Video TVC đã thực hiện</h2>
+        <h2 class="section-title text-center">
+          Video TVC & Phim Tài Liệu Đã Thực Hiện
+        </h2>
         <div class="video-grid">
           <!-- Video Card 1 -->
           <div class="video-card video-playing">
@@ -320,7 +641,7 @@
             </div>
             <div class="video-info">
               <h3>TVC Quảng Cáo Bất Động Sản</h3>
-              <p>Voice Talent: Tuấn Voi(ce)</p>
+              <p>Voice Talent: Tuấn Voi</p>
             </div>
           </div>
           <!-- Video Card 2 -->
@@ -339,84 +660,83 @@
             </div>
             <div class="video-info">
               <h3>Phim Giới Thiệu Doanh Nghiệp</h3>
-              <p>Voice Talent: Tuấn Voi(ce)</p>
+              <p>Voice Talent: Tuấn Voi</p>
             </div>
           </div>
           <!-- Video Card 3 -->
           <div class="video-card" data-video-id="GmzYI5toDy8">
-            <div
-              class="video-thumbnail"
-              style="
-                background-image: url('https://img.youtube.com/vi/GmzYI5toDy8/hqdefault.jpg');
-              "
-            >
-              <button
-                class="video-play-btn"
-                aria-label="Phát TVC Khuyến Mãi Tết"
-              >
-                <i class="fas fa-play"></i>
-              </button>
+            <div class="video-embed">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/GmzYI5toDy8?si=sYyteWXVeei1Tq8N"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </div>
             <div class="video-info">
               <h3>TVC Khuyến Mãi Tết</h3>
-              <p>Voice Talent: Tuấn Voi(ce)</p>
+              <p>Voice Talent: Tuấn Voi</p>
             </div>
           </div>
           <!-- Video Card 4 -->
           <div class="video-card" data-video-id="32zSa0X0yAs">
-            <div
-              class="video-thumbnail"
-              style="
-                background-image: url('https://img.youtube.com/vi/32zSa0X0yAs/hqdefault.jpg');
-              "
-            >
-              <button
-                class="video-play-btn"
-                aria-label="Phát Video E-learning Nội Bộ"
-              >
-                <i class="fas fa-play"></i>
-              </button>
+            <div class="video-embed">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/32zSa0X0yAs?si=KqjQ5naP3n94Qeyr"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </div>
             <div class="video-info">
               <h3>Video E-learning Nội Bộ</h3>
-              <p>Voice Talent: Tuấn Voi(ce)</p>
+              <p>Voice Talent: Tuấn Voi</p>
             </div>
           </div>
           <!-- Video Card 5 -->
           <div class="video-card" data-video-id="sSLFn2oHCk0">
-            <div
-              class="video-thumbnail"
-              style="
-                background-image: url('https://img.youtube.com/vi/sSLFn2oHCk0/hqdefault.jpg');
-              "
-            >
-              <button
-                class="video-play-btn"
-                aria-label="Phát TV Show Highlight"
-              >
-                <i class="fas fa-play"></i>
-              </button>
+            <div class="video-embed">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/sSLFn2oHCk0?si=7FbdznZAAgtW_00X"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </div>
             <div class="video-info">
               <h3>TV Show Highlight</h3>
-              <p>Voice Talent: Tuấn Voi(ce)</p>
+              <p>Voice Talent: Tuấn Voi</p>
             </div>
           </div>
           <!-- Video Card 6 -->
           <div class="video-card" data-video-id="60ljmoLH09I">
-            <div
-              class="video-thumbnail"
-              style="
-                background-image: url('https://img.youtube.com/vi/60ljmoLH09I/hqdefault.jpg');
-              "
-            >
-              <button class="video-play-btn" aria-label="Phát Case Study TVC">
-                <i class="fas fa-play"></i>
-              </button>
+            <div class="video-embed">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/60ljmoLH09I?si=Dt_lKsmh_Axo3n9M"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </div>
             <div class="video-info">
               <h3>Case Study TVC</h3>
-              <p>Voice Talent: Tuấn Voi(ce)</p>
+              <p>Voice Talent: Tuấn Voi</p>
             </div>
           </div>
         </div>
@@ -426,7 +746,9 @@
     <!-- Services & Pricing Section -->
     <section id="services" class="services">
       <div class="container">
-        <h2 class="section-title text-center">Dịch vụ & Bảng giá</h2>
+        <h2 class="section-title text-center">
+          Dịch Vụ Voice Talent & Bảng Giá
+        </h2>
         <div class="pricing-grid">
           <!-- Basic Plan -->
           <div class="pricing-card">
@@ -438,7 +760,7 @@
               <li><i class="fas fa-check"></i> 1 Lần chỉnh sửa</li>
               <li><i class="fas fa-check"></i> File WAV/MP3 chuẩn</li>
             </ul>
-            <a href="#contact" class="btn btn-secondary">Chọn Gói</a>
+            <a class="btn btn-secondary">Chọn Gói</a>
           </div>
           <!-- Popular Plan -->
           <div class="pricing-card popular">
@@ -452,7 +774,7 @@
               <li><i class="fas fa-check"></i> File WAV/MP3 chuẩn</li>
               <li><i class="fas fa-check"></i> Bản quyền thương mại</li>
             </ul>
-            <a href="#contact" class="btn btn-primary">Chọn Gói</a>
+            <a class="btn btn-primary">Chọn Gói</a>
           </div>
           <!-- Pro Plan -->
           <div class="pricing-card">
@@ -465,33 +787,266 @@
               <li><i class="fas fa-check"></i> File WAV/MP3 chuẩn</li>
               <li><i class="fas fa-check"></i> Bản quyền phát sóng</li>
             </ul>
-            <a href="#contact" class="btn btn-secondary">Liên hệ</a>
+            <a class="btn btn-secondary">Liên hệ</a>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+      <div class="container">
+        <h2 class="section-title text-center">Câu Hỏi Thường Gặp</h2>
+        <div class="faq-grid">
+          <!-- FAQ Item 1 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <h3>Voice Talent là gì?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                <strong>Voice Talent</strong> (còn gọi là Voice Over Artist hay
+                Voice Actor) là người chuyên cung cấp giọng đọc chuyên nghiệp
+                cho các sản phẩm truyền thông như quảng cáo TVC, phim tài liệu,
+                e-learning, lồng tiếng phim, IVR tổng đài, audiobook... Voice
+                Talent cần có kỹ năng diễn xuất bằng giọng nói, phát âm chuẩn,
+                và khả năng truyền cảm xúc qua âm thanh.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <h3>Chi phí thuê Voice Talent là bao nhiêu?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Chi phí Voice Talent phụ thuộc vào
+                <strong>độ dài kịch bản</strong> và
+                <strong>mục đích sử dụng</strong>:
+              </p>
+              <ul>
+                <li>
+                  <strong>Kịch bản ngắn</strong> (dưới 150 từ): Từ 500.000đ
+                </li>
+                <li>
+                  <strong>Dự án tiêu chuẩn</strong> (dưới 500 từ): Từ 1.000.000đ
+                </li>
+                <li>
+                  <strong>Dự án dài tập / MC</strong>: Liên hệ để báo giá chi
+                  tiết
+                </li>
+              </ul>
+              <p>
+                Bản quyền thương mại, phát sóng truyền hình sẽ có mức phí riêng.
+                Liên hệ để được tư vấn cụ thể cho dự án của bạn.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <h3>Thời gian giao file là bao lâu?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Thời gian giao file tiêu chuẩn là <strong>24 giờ</strong> kể từ
+                khi nhận kịch bản và xác nhận thông tin. Với dự án gấp, tôi có
+                thể giao trong vòng <strong>6-12 giờ</strong> với phụ phí rush
+                order.
+              </p>
+              <p>
+                File giao bao gồm: <strong>WAV chất lượng cao</strong> (không
+                nén) và <strong>MP3 320kbps</strong> (nếu cần). File đã được hậu
+                kỳ chuẩn: khử nhiễu, cân bằng âm lượng, EQ, compress.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <h3>Có thể thu âm Voice Over trực tuyến không?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                <strong>Có</strong>, tôi hỗ trợ thu âm trực tuyến qua các nền
+                tảng như
+                <strong>Zoom, Google Meet, Microsoft Teams</strong> hoặc nền
+                tảng khác theo yêu cầu. Bạn có thể theo dõi và chỉ đạo real-time
+                trong quá trình thu âm.
+              </p>
+              <p>
+                Điều này đặc biệt hữu ích cho các dự án cần điều chỉnh nhiều về
+                cảm xúc, nhịp điệu hoặc cách phát âm. Studio của tôi được trang
+                bị kết nối internet tốc độ cao và thiết bị thu âm chuyên nghiệp.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <h3>Format file nào được hỗ trợ?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Tôi hỗ trợ giao file ở các format phổ biến:</p>
+              <ul>
+                <li>
+                  <strong>WAV</strong> (48kHz/24bit hoặc 44.1kHz/16bit) - Chất
+                  lượng cao nhất, không nén
+                </li>
+                <li>
+                  <strong>MP3</strong> (320kbps hoặc 128kbps) - File nhẹ, dễ
+                  chia sẻ
+                </li>
+                <li><strong>AIFF</strong> - Format cho Mac/iOS</li>
+                <li><strong>FLAC</strong> - Nén không mất chất lượng</li>
+              </ul>
+              <p>
+                Nếu bạn cần format đặc biệt khác (AAC, OGG, M4A...), vui lòng
+                thông báo trước khi thu âm.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 6 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <h3>Có được chỉnh sửa nếu không hài lòng?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                <strong>Có</strong>, tất cả gói dịch vụ đều bao gồm revision
+                (chỉnh sửa):
+              </p>
+              <ul>
+                <li>
+                  <strong>Gói Kịch bản ngắn:</strong> 1 lần chỉnh sửa miễn phí
+                </li>
+                <li>
+                  <strong>Gói Dự án tiêu chuẩn:</strong> 2 lần chỉnh sửa miễn
+                  phí
+                </li>
+                <li>
+                  <strong>Gói Dài tập/MC:</strong> Không giới hạn (trong phạm vi
+                  hợp lý)
+                </li>
+              </ul>
+              <p>
+                Chỉnh sửa bao gồm: thay đổi cảm xúc, nhịp điệu, phát âm, hoặc
+                thu lại đoạn nào đó. Nếu thay đổi kịch bản gốc (thêm/bớt nội
+                dung), sẽ tính phí bổ sung.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Schema Markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Voice Talent là gì?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Voice Talent (còn gọi là Voice Over Artist hay Voice Actor) là người chuyên cung cấp giọng đọc chuyên nghiệp cho các sản phẩm truyền thông như quảng cáo TVC, phim tài liệu, e-learning, lồng tiếng phim, IVR tổng đài, audiobook... Voice Talent cần có kỹ năng diễn xuất bằng giọng nói, phát âm chuẩn, và khả năng truyền cảm xúc qua âm thanh."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Chi phí thuê Voice Talent là bao nhiêu?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Chi phí Voice Talent phụ thuộc vào độ dài kịch bản và mục đích sử dụng. Kịch bản ngắn (dưới 150 từ) từ 500.000đ, dự án tiêu chuẩn (dưới 500 từ) từ 1.000.000đ. Bản quyền thương mại, phát sóng truyền hình sẽ có mức phí riêng. Liên hệ để được tư vấn cụ thể."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Thời gian giao file là bao lâu?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Thời gian giao file tiêu chuẩn là 24 giờ kể từ khi nhận kịch bản. Với dự án gấp, có thể giao trong vòng 6-12 giờ với phụ phí rush order. File giao bao gồm WAV chất lượng cao và MP3 320kbps, đã được hậu kỳ chuẩn."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Có thể thu âm Voice Over trực tuyến không?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Có, hỗ trợ thu âm trực tuyến qua Zoom, Google Meet, Microsoft Teams. Bạn có thể theo dõi và chỉ đạo real-time trong quá trình thu âm. Studio được trang bị kết nối internet tốc độ cao và thiết bị thu âm chuyên nghiệp."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Format file nào được hỗ trợ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Hỗ trợ các format: WAV (48kHz/24bit hoặc 44.1kHz/16bit), MP3 (320kbps hoặc 128kbps), AIFF, FLAC. Có thể giao format đặc biệt khác theo yêu cầu như AAC, OGG, M4A."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Có được chỉnh sửa nếu không hài lòng?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Có, tất cả gói dịch vụ đều bao gồm revision. Gói Kịch bản ngắn: 1 lần chỉnh sửa, Gói Dự án tiêu chuẩn: 2 lần chỉnh sửa, Gói Dài tập/MC: không giới hạn. Chỉnh sửa bao gồm thay đổi cảm xúc, nhịp điệu, phát âm."
+            }
+          }
+        ]
+      }
+    </script>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
       <div class="container contact-container">
         <div class="contact-info">
-          <h2 class="section-title text-white">Hợp tác cùng tôi</h2>
+          <h2 class="section-title text-white">
+            Liên Hệ Hợp Tác - Đặt Lịch Thu Âm
+          </h2>
           <p class="text-gray">
             Bạn đã sẵn sàng để dự án của mình cất tiếng nói? Hãy điền vào form
             hoặc liên hệ trực tiếp với tôi.
           </p>
-          <div class="contact-item">
+          <a
+            class="contact-item"
+            href="mailto:mctuanngoc.event88@gmail.com"
+            aria-label="Gửi email cho Tuấn Voi"
+          >
             <i class="fas fa-envelope"></i>
             <span>mctuanngoc.event88@gmail.com</span>
-          </div>
-          <div class="contact-item">
+          </a>
+          <a
+            class="contact-item"
+            href="tel:0332368132"
+            aria-label="Gọi điện cho Tuấn Voi"
+          >
             <i class="fas fa-phone"></i>
             <span>0332.368.132</span>
-          </div>
-          <div class="contact-item">
+          </a>
+          <a
+            class="contact-item"
+            href="https://facebook.com/tuanvoice"
+            target="_blank"
+            rel="noopener"
+            aria-label="Mở Facebook Tuấn Voi"
+          >
             <i class="fab fa-facebook"></i>
             <span>facebook.com/tuanvoice</span>
-          </div>
+          </a>
           <div class="contact-actions">
             <a
               href="https://zalo.me/0332368132"
@@ -523,14 +1078,18 @@
               ></textarea>
             </div>
             <button type="submit" class="btn btn-primary full-width">
-              Gửi Tin Nhắn
+              Gửi email
             </button>
           </form>
         </div>
       </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+    <!-- Defer JavaScript for better performance -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
   </body>
 </html>

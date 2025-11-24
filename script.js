@@ -50,10 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Generate waveform bars dynamically based on audio duration
   function generateWaveform(waveformContainer, duration) {
     // Calculate number of bars based on duration (1 bar per 2-3 seconds, min 20, max 100)
-    const barsCount = Math.min(
-      Math.max(Math.ceil(duration / 2.5), 20),
-      100
-    );
+    const barsCount = Math.min(Math.max(Math.ceil(duration / 2.5), 20), 100);
 
     waveformContainer.innerHTML = "";
 
@@ -191,6 +188,69 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  const navLinks = document.querySelectorAll(
+    '.nav-desktop a[href^="#"]:not(.btn), .nav-mobile a[href^="#"]'
+  );
+
+  let currentActiveNav = null;
+  function setActiveNav(targetId) {
+    if (!targetId || currentActiveNav === targetId) return;
+    currentActiveNav = targetId;
+    navLinks.forEach((link) => {
+      const href = link.getAttribute("href");
+      if (!href || href === "#") return;
+      if (href === targetId) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+  }
+
+  const trackedSections = [
+    ...new Set(
+      Array.from(navLinks)
+        .map((link) => link.getAttribute("href"))
+        .filter((href) => href && href.startsWith("#") && href.length > 1)
+    ),
+  ]
+    .map((selector) => document.querySelector(selector))
+    .filter(Boolean);
+
+  if (trackedSections.length) {
+    const header = document.querySelector(".header");
+    const getHeaderOffset = () => (header?.offsetHeight || 0) + 10;
+
+    const getActiveSectionId = () => {
+      const scrollPosition = window.scrollY + getHeaderOffset();
+      let activeId = trackedSections[0]?.id;
+
+      trackedSections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionBottom = sectionTop + section.offsetHeight;
+        if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+          activeId = section.id;
+        }
+      });
+
+      return activeId ? `#${activeId}` : null;
+    };
+
+    let ticking = false;
+    const handleScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(() => {
+        setActiveNav(getActiveSectionId());
+        ticking = false;
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("resize", handleScroll);
+    handleScroll();
+  }
+
   const partnerSwiperEl = document.querySelector(".partners-swiper");
   if (partnerSwiperEl && typeof Swiper !== "undefined") {
     new Swiper(partnerSwiperEl, {
@@ -251,6 +311,39 @@ document.addEventListener("DOMContentLoaded", () => {
 
     card.addEventListener("click", () => {
       embedVideo();
+    });
+  });
+
+  // FAQ Accordion
+  const faqItems = document.querySelectorAll(".faq-item");
+
+  faqItems.forEach((item) => {
+    const question = item.querySelector(".faq-question");
+
+    if (!question) return;
+
+    question.addEventListener("click", () => {
+      const isActive = item.classList.contains("active");
+
+      // Close all other FAQ items
+      faqItems.forEach((otherItem) => {
+        if (otherItem !== item) {
+          otherItem.classList.remove("active");
+          const otherQuestion = otherItem.querySelector(".faq-question");
+          if (otherQuestion) {
+            otherQuestion.setAttribute("aria-expanded", "false");
+          }
+        }
+      });
+
+      // Toggle current item
+      if (isActive) {
+        item.classList.remove("active");
+        question.setAttribute("aria-expanded", "false");
+      } else {
+        item.classList.add("active");
+        question.setAttribute("aria-expanded", "true");
+      }
     });
   });
 });
